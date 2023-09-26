@@ -57,9 +57,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="AboutPage.xaml">
+	  <MauiXaml Update="Map.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Image\" />
 	</ItemGroup>
 
 </Project>
