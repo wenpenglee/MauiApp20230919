@@ -1,8 +1,8 @@
 namespace MauiApp20230919;
 
-public partial class AboutPage : ContentPage
+public partial class Map : ContentPage
 {
-	public AboutPage()
+	public Map()
 	{
 		InitializeComponent();
 	}

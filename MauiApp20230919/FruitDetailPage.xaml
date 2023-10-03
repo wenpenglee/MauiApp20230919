@@ -3,11 +3,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp20230919.FruitDetailPage">
-    <VerticalStackLayout>
-        <Label Text="x" HorizontalOptions="Start" Margin="10" FontSize="20">
-            <Label.GestureRecognizers>
-                <TapGestureRecognizer x:Name="NavigateBack" Tapped="TapGestureRecognizer_Tapped"/>
-            </Label.GestureRecognizers>
-        </Label>
-    </VerticalStackLayout>
+    <StackLayout Margin="20">
+        
+        <Label x:Name="FruitName" FontSize="48"></Label>
+        <Label x:Name="FruitDescription" FontSize="20"></Label>
+        <Image Grid.Row="0" x:Name="FruitImage" HeightRequest="500"></Image>
+    </StackLayout>
 </ContentPage>

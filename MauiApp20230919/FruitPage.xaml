@@ -2,8 +2,26 @@
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mauiApp20230919="clr-namespace:MauiApp20230919"
              x:Class="MauiApp20230919.FruitPage">
-    <StackLayout>
-        <Button Text="Navigate to Fruit Detail Page" x:Name="FruitDetailButton" Clicked="FruitDetailButton_OnClicked"></Button>
-    </StackLayout>
+    <ListView x:Name="FruitListView" HasUnevenRows="True"
+              ItemSelected="FruitListView_ItemSelected">
+        <ListView.ItemTemplate>
+            <DataTemplate x:DataType="mauiApp20230919:Fruit">
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal" Margin="20" Padding="10">
+                        <Image Source="{Binding Image}"
+                               HeightRequest="60"
+                               WidthRequest="60"
+                               Margin="10"/>
+                        <StackLayout>
+                            <Label Text="{Binding Name}"
+                                   FontSize="24"/>
+                        </StackLayout>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        
+    </ListView>
 </ContentPage>

@@ -12,6 +12,15 @@ public partial class FruitDetailPage : ContentPage
     {
         InitializeComponent();
     }
+    
+    
+    public FruitDetailPage(string name, string image, string description)
+    {
+        InitializeComponent();
+        FruitName.Text = name;
+        FruitImage.Source = image;
+        FruitDescription.Text = description;
+    }
 
     private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
     {
