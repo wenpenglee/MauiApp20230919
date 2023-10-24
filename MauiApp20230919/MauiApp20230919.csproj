@@ -39,7 +39,6 @@
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -49,7 +48,96 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\abc.png" />
+	  <None Remove="Resources\Images\alphabet_a.png" />
+	  <None Remove="Resources\Images\alphabet_b.png" />
+	  <None Remove="Resources\Images\alphabet_c.png" />
+	  <None Remove="Resources\Images\alphabet_d.png" />
+	  <None Remove="Resources\Images\alphabet_e.png" />
+	  <None Remove="Resources\Images\alphabet_f.png" />
+	  <None Remove="Resources\Images\alphabet_g.png" />
+	  <None Remove="Resources\Images\alphabet_h.png" />
+	  <None Remove="Resources\Images\alphabet_i.png" />
+	  <None Remove="Resources\Images\alphabet_j.png" />
+	  <None Remove="Resources\Images\alphabet_k.png" />
+	  <None Remove="Resources\Images\alphabet_l.png" />
+	  <None Remove="Resources\Images\alphabet_m.png" />
+	  <None Remove="Resources\Images\alphabet_n.png" />
+	  <None Remove="Resources\Images\alphabet_o.png" />
+	  <None Remove="Resources\Images\alphabet_p.png" />
+	  <None Remove="Resources\Images\alphabet_q.png" />
+	  <None Remove="Resources\Images\alphabet_r.png" />
+	  <None Remove="Resources\Images\alphabet_s.png" />
+	  <None Remove="Resources\Images\alphabet_t.png" />
+	  <None Remove="Resources\Images\alphabet_u.png" />
+	  <None Remove="Resources\Images\alphabet_v.png" />
+	  <None Remove="Resources\Images\alphabet_w.png" />
+	  <None Remove="Resources\Images\alphabet_x.png" />
+	  <None Remove="Resources\Images\alphabet_y.png" />
+	  <None Remove="Resources\Images\alphabet_z.png" />
+	  <None Remove="Resources\Images\animal.png" />
+	  <None Remove="Resources\Images\apple.png" />
+	  <None Remove="Resources\Images\apricot.png" />
+	  <None Remove="Resources\Images\arrow.png" />
+	  <None Remove="Resources\Images\banana.png" />
+	  <None Remove="Resources\Images\cat.png" />
+	  <None Remove="Resources\Images\circle.png" />
+	  <None Remove="Resources\Images\coconut.png" />
+	  <None Remove="Resources\Images\color.png" />
+	  <None Remove="Resources\Images\color_black.png" />
+	  <None Remove="Resources\Images\color_blue.png" />
+	  <None Remove="Resources\Images\color_gray.png" />
+	  <None Remove="Resources\Images\color_green.png" />
+	  <None Remove="Resources\Images\color_orange.png" />
+	  <None Remove="Resources\Images\color_purple.png" />
+	  <None Remove="Resources\Images\color_red.png" />
+	  <None Remove="Resources\Images\color_yellow.png" />
+	  <None Remove="Resources\Images\cube.png" />
+	  <None Remove="Resources\Images\dog.png" />
+	  <None Remove="Resources\Images\eight.png" />
+	  <None Remove="Resources\Images\elephant.png" />
+	  <None Remove="Resources\Images\five.png" />
+	  <None Remove="Resources\Images\four.png" />
+	  <None Remove="Resources\Images\fox.png" />
+	  <None Remove="Resources\Images\fruit.png" />
+	  <None Remove="Resources\Images\fruits.png" />
+	  <None Remove="Resources\Images\giraffe.png" />
+	  <None Remove="Resources\Images\grapes.png" />
+	  <None Remove="Resources\Images\guava.png" />
+	  <None Remove="Resources\Images\heart.png" />
+	  <None Remove="Resources\Images\home.png" />
 	  <None Remove="Resources\Images\home_FILL0_wght400_GRAD0_opsz24.svg" />
+	  <None Remove="Resources\Images\horse.png" />
+	  <None Remove="Resources\Images\kiwi.png" />
+	  <None Remove="Resources\Images\learn.png" />
+	  <None Remove="Resources\Images\lion.png" />
+	  <None Remove="Resources\Images\mango.png" />
+	  <None Remove="Resources\Images\map.png" />
+	  <None Remove="Resources\Images\monkey.png" />
+	  <None Remove="Resources\Images\nine.png" />
+	  <None Remove="Resources\Images\numbers.png" />
+	  <None Remove="Resources\Images\one.png" />
+	  <None Remove="Resources\Images\orange.png" />
+	  <None Remove="Resources\Images\oval.png" />
+	  <None Remove="Resources\Images\peach.png" />
+	  <None Remove="Resources\Images\pineapple.png" />
+	  <None Remove="Resources\Images\pyramid.png" />
+	  <None Remove="Resources\Images\rabbit.png" />
+	  <None Remove="Resources\Images\rectangle.png" />
+	  <None Remove="Resources\Images\seven.png" />
+	  <None Remove="Resources\Images\shapes.png" />
+	  <None Remove="Resources\Images\six.png" />
+	  <None Remove="Resources\Images\square.png" />
+	  <None Remove="Resources\Images\star.png" />
+	  <None Remove="Resources\Images\strawberry.png" />
+	  <None Remove="Resources\Images\sun.png" />
+	  <None Remove="Resources\Images\ten.png" />
+	  <None Remove="Resources\Images\three.png" />
+	  <None Remove="Resources\Images\tiger.png" />
+	  <None Remove="Resources\Images\triangle.png" />
+	  <None Remove="Resources\Images\two.png" />
+	  <None Remove="Resources\Images\watermelon.png" />
+	  <None Remove="Resources\Images\zebra.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -57,6 +145,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="KidsLearningDetailPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Map.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
