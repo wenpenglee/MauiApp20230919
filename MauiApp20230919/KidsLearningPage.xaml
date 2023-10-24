@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp20230919.KidsLearningPage"
+             Title="Learning">
+
+    <Grid RowDefinitions="1*,3*,3*,3*"
+          ColumnDefinitions="5*,5*"
+          RowSpacing="10"
+          ColumnSpacing="10"
+          Margin="20">
+
+        <Label Text="Kids Learning"
+               Grid.Row="0"
+               Grid.Column="0"
+               Grid.ColumnSpan="2"
+               FontSize="Large"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+        <Border Grid.Row="1"
+                Grid.Column="0"
+                Padding="20">
+            <VerticalStackLayout Spacing="10"
+                                 VerticalOptions="Center">
+                <ImageButton Source="numbers.png"
+                             Aspect="AspectFit"
+                             HeightRequest="120"
+                             CommandParameter="Numbers"
+                             Clicked="ImageButton_OnClicked"/>
+                <Label Text="Numbers"
+                       HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+        </Border>
+
+        <Border Grid.Row="1"
+                Grid.Column="1"
+                Padding="20">
+            <VerticalStackLayout Spacing="10"
+                                 VerticalOptions="Center">
+                <ImageButton Source="abc.png"
+                             Aspect="AspectFit"
+                             HeightRequest="120"
+                             CommandParameter="Letters"
+                             Clicked="ImageButton_OnClicked"/>
+                <Label Text="Letters"
+                       HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+        </Border>
+
+        <Border Grid.Row="2"
+                Grid.Column="0"
+                Padding="20">
+            <VerticalStackLayout Spacing="10"
+                                 VerticalOptions="Center">
+                <ImageButton Source="shapes.png"
+                             Aspect="AspectFit"
+                             HeightRequest="120"
+                             CommandParameter="Shapes"
+                             Clicked="ImageButton_OnClicked"/>
+                <Label Text="Shapes"
+                       HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+        </Border>
+
+        <Border Grid.Row="2"
+                Grid.Column="1"
+                Padding="20">
+            <VerticalStackLayout Spacing="10"
+                                 VerticalOptions="Center">
+                <ImageButton Source="color.png"
+                             Aspect="AspectFit"
+                             HeightRequest="120"
+                             CommandParameter="Colors"
+                             Clicked="ImageButton_OnClicked"/>
+                <Label Text="Colors"
+                       HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+        </Border>
+
+        <Border Grid.Row="3"
+                Grid.Column="0"
+                Padding="20">
+            <VerticalStackLayout Spacing="10"
+                                 VerticalOptions="Center">
+                <ImageButton Source="fruits.png"
+                             Aspect="AspectFit"
+                             HeightRequest="120"
+                             CommandParameter="Fruits"
+                             Clicked="ImageButton_OnClicked"/>
+                <Label Text="Fruits"
+                       HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+        </Border>
+
+        <Border Grid.Row="3"
+                Grid.Column="1"
+                Padding="20">
+            <VerticalStackLayout Spacing="10"
+                                 VerticalOptions="Center">
+                <ImageButton Source="animal.png"
+                             Aspect="AspectFit"
+                             HeightRequest="120"
+                             CommandParameter="Animals"
+                             Clicked="ImageButton_OnClicked"/>
+                <Label Text="Animals"
+                       HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+        </Border>
+    </Grid>
+
+    
+</ContentPage>

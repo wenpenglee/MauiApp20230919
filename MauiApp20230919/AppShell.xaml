@@ -25,6 +25,12 @@
            ContentTemplate="{DataTemplate local:FruitPage}"
            Icon="{OnPlatform 'fruit.png', iOS='fruit.png', MacCatalyst='fruit.png'}">
        </ShellContent>
+
+       <ShellContent
+           Title="Learn"
+           ContentTemplate="{DataTemplate local:KidsLearningPage}"
+           Icon="{OnPlatform 'learn.png', iOS='learn.png', MacCatalyst='learn.png'}">
+       </ShellContent>
     </TabBar>
 
 </Shell>
