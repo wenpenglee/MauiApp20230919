@@ -80,6 +80,7 @@
 	  <None Remove="Resources\Images\apricot.png" />
 	  <None Remove="Resources\Images\arrow.png" />
 	  <None Remove="Resources\Images\banana.png" />
+	  <None Remove="Resources\Images\business.png" />
 	  <None Remove="Resources\Images\cat.png" />
 	  <None Remove="Resources\Images\circle.png" />
 	  <None Remove="Resources\Images\coconut.png" />
@@ -96,6 +97,7 @@
 	  <None Remove="Resources\Images\dog.png" />
 	  <None Remove="Resources\Images\eight.png" />
 	  <None Remove="Resources\Images\elephant.png" />
+	  <None Remove="Resources\Images\entertainment.png" />
 	  <None Remove="Resources\Images\five.png" />
 	  <None Remove="Resources\Images\four.png" />
 	  <None Remove="Resources\Images\fox.png" />
@@ -104,6 +106,7 @@
 	  <None Remove="Resources\Images\giraffe.png" />
 	  <None Remove="Resources\Images\grapes.png" />
 	  <None Remove="Resources\Images\guava.png" />
+	  <None Remove="Resources\Images\health.png" />
 	  <None Remove="Resources\Images\heart.png" />
 	  <None Remove="Resources\Images\home.png" />
 	  <None Remove="Resources\Images\home_FILL0_wght400_GRAD0_opsz24.svg" />
@@ -114,6 +117,8 @@
 	  <None Remove="Resources\Images\mango.png" />
 	  <None Remove="Resources\Images\map.png" />
 	  <None Remove="Resources\Images\monkey.png" />
+	  <None Remove="Resources\Images\nation.png" />
+	  <None Remove="Resources\Images\news.png" />
 	  <None Remove="Resources\Images\nine.png" />
 	  <None Remove="Resources\Images\numbers.png" />
 	  <None Remove="Resources\Images\one.png" />
@@ -124,24 +129,29 @@
 	  <None Remove="Resources\Images\pyramid.png" />
 	  <None Remove="Resources\Images\rabbit.png" />
 	  <None Remove="Resources\Images\rectangle.png" />
+	  <None Remove="Resources\Images\science.png" />
 	  <None Remove="Resources\Images\seven.png" />
 	  <None Remove="Resources\Images\shapes.png" />
 	  <None Remove="Resources\Images\six.png" />
+	  <None Remove="Resources\Images\sports.png" />
 	  <None Remove="Resources\Images\square.png" />
 	  <None Remove="Resources\Images\star.png" />
 	  <None Remove="Resources\Images\strawberry.png" />
 	  <None Remove="Resources\Images\sun.png" />
+	  <None Remove="Resources\Images\technology.png" />
 	  <None Remove="Resources\Images\ten.png" />
 	  <None Remove="Resources\Images\three.png" />
 	  <None Remove="Resources\Images\tiger.png" />
 	  <None Remove="Resources\Images\triangle.png" />
 	  <None Remove="Resources\Images\two.png" />
 	  <None Remove="Resources\Images\watermelon.png" />
+	  <None Remove="Resources\Images\world.png" />
 	  <None Remove="Resources\Images\zebra.png" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -149,6 +159,15 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Map.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="News\NewsDetailPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="News\NewsHomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="News\NewsListPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
