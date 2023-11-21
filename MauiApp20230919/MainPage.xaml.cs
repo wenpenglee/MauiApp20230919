@@ -2,7 +2,7 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        // int count = 0;
         private string _account = "wenpenglee";
         private string _password = "12345678";
 

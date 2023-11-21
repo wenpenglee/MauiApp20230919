@@ -4,23 +4,32 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MauiApp20230919"
+    xmlns:news="clr-namespace:MauiApp20230919.News"
     Shell.FlyoutBehavior="Disabled">
 
  
 
     <TabBar>
-       <ShellContent
+       <!--<ShellContent
        Title="Home"
        ContentTemplate="{DataTemplate local:EnterUserNamePage}"
        Route="EnterUserNamePage"
-       Icon="{OnPlatform 'home.png', iOS='home.png', MacCatalyst='home.png'}"/>
+       Icon="{OnPlatform 'home.png', iOS='home.png', MacCatalyst='home.png'}"/>-->
        
+       <ShellContent
+           Title="News"
+           ContentTemplate="{DataTemplate news:NewsHomePage}"
+           Route="NewsPage"
+           Icon="{OnPlatform 'news.png', iOS='news.png', MacCatalyst='news.png'}">
+       </ShellContent>
+
        <ShellContent
          Title="Map"
          ContentTemplate="{DataTemplate local:Map}"
-         Icon="{OnPlatform 'map.png', iOS='map.png', MacCatalyst='map.png'}" />
-       
-       <ShellContent
+         Icon="{OnPlatform 'map.png', iOS='map.png', MacCatalyst='map.png'}" >
+       </ShellContent>
+
+        <ShellContent
            Title="Fruit"
            ContentTemplate="{DataTemplate local:FruitPage}"
            Icon="{OnPlatform 'fruit.png', iOS='fruit.png', MacCatalyst='fruit.png'}">
