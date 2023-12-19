@@ -5,16 +5,17 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MauiApp20230919"
     xmlns:news="clr-namespace:MauiApp20230919.News"
+    xmlns:weather="clr-namespace:MauiApp20230919.Weather"
     Shell.FlyoutBehavior="Disabled">
 
  
 
     <TabBar>
-       <!--<ShellContent
-       Title="Home"
-       ContentTemplate="{DataTemplate local:EnterUserNamePage}"
-       Route="EnterUserNamePage"
-       Icon="{OnPlatform 'home.png', iOS='home.png', MacCatalyst='home.png'}"/>-->
+       <ShellContent
+       Title="Weather"
+       ContentTemplate="{DataTemplate weather:WeatherWelcomePage}"
+       Route="WeatherPage"
+       Icon="{OnPlatform 'home.png', iOS='home.png', MacCatalyst='home.png'}"/>
        
        <ShellContent
            Title="News"
